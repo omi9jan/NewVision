@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web20 C2</title>
+    <style>
+        /* Write all the necessery css here  */
+        
+
+        #top, #mid, #bottom{
+            border: 1px solid black;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        #top>div{
+            /* display:grid; */
+            grid-template-columns: auto;
+            gap: 10px;
+        }
+        #top>div>img, #mid>div>img, #bottom>div>img{
+            width:300px;
+            height:300px;
+            border:1px solid grey;
+            border-radius: 1rem;
+            margin: 10px;
+            
+        }
+
+        @media all and (min-width: 799px) and (max-width: 1100px) {
+        #top>div>img, #mid>div>img, #bottom>div>img{
+            grid-template-columns: 3;
+            width:200px;
+            height:200px;
+        }
+      }
+        /* Medium screens */
+      @media all and (min-width: 401px) and (max-width: 800px) {
+        #top>div>img, #mid>div>img, #bottom>div>img{
+            grid-template-columns: 2;
+            width:150px;
+            height:150px;
+        }
+      }
+      /* Small screens */
+      @media all and (min-width: 100px) and (max-width: 400px) {
+        #top>div>img, #mid>div>img, #bottom>div>img{
+            grid-template-columns: 1;
+            width:80px;
+            height:80px;
+        }
+      }
+    </style>
+</head>
+<body>
+    <div id="top">
+        <h1>Choose Your Store</h1>
+        <div>
+            <!-- 6 cards will go inside here  -->
+            <img src="https://m.media-amazon.com/images/I/71J2gxlRMuL._AC_UL480_QL65_.jpg" alt="img">
+            <img src="https://m.media-amazon.com/images/I/71Tt-i8LOVL._AC_UL480_QL65_.jpg" alt="img">
+            <img src="https://m.media-amazon.com/images/I/61vQOXRTk8L._AC_UL480_QL65_.jpg" alt="img">
+            <img src="https://m.media-amazon.com/images/I/814gfY-b3LL._AC_UL480_QL65_.jpg" alt="img">
+            <img src="https://m.media-amazon.com/images/I/51Ltr1ObEtL._AC_UL480_QL65_.jpg" alt="img">
+            <img src="https://m.media-amazon.com/images/I/61cpY9HKL5L._AC_UL480_QL65_.jpg" alt="img">
+        </div>
+    </div>
+    <div id="mid">
+        <h1>Hard to Resist Deals</h1>
+        <div>
+            <!-- 8 cards will go inside here  -->
+            <img src="https://m.media-amazon.com/images/I/61LB+d0vheL._AC._SR360,460.jpg" alt="img">
+            <img src="https://m.media-amazon.com/images/I/71AvQd3VzqL._AC._SR360,460.jpg" alt="img">
+            <img src="https://m.media-amazon.com/images/I/81-fFXQdPTL._AC._SR360,460.jpg" alt="img">
+            <img src="https://m.media-amazon.com/images/I/81guvfQzeVL._AC._SR360,460.jpg" alt="img">
+            <img src="https://m.media-amazon.com/images/I/61QRgOgBx0L._AC._SR360,460.jpg" alt="img">
+            <img src="https://m.media-amazon.com/images/I/71dEY4Neo3L._AC._SR360,460.jpg" alt="img">
+        </div>
+    </div>
+    <div id="bottom">
+        <h1>Super Saving Products</h1>
+        <div>
+            <!-- 6 cards will go inside here  -->
+            <img src="https://images-eu.ssl-images-amazon.com/images/I/313dtY-LOEL.AC_SL240_.jpg" alt="img">
+            <img src="https://images-eu.ssl-images-amazon.com/images/I/51yvxGKCiYL.AC_SL240_.jpg" alt="img">
+            <img src="https://images-eu.ssl-images-amazon.com/images/I/619D1OTIYnL.AC_SL240_.jpg" alt="img">
+            <img src="https://images-eu.ssl-images-amazon.com/images/I/71xkI-PIE5L.AC_SL240_.jpg" alt="img">
+            <img src="https://images-eu.ssl-images-amazon.com/images/I/31sHzO4xF9L.AC_SL240_.jpg" alt="img">
+            <img src="https://images-eu.ssl-images-amazon.com/images/I/71pbtRs3UQL.AC_SL240_.jpg" alt="img">
+        </div>
+    </div>
+</body>
+</html>
